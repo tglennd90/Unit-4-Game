@@ -30,32 +30,56 @@ body {
     padding: 10px 10px;
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
 }
 
-/* Game Number */
+/* Number/Stats */
 
-/* User Stats */
+#numberStats {
+    display: inline-flex;
+}
+
+#gameNumber {
+    background: salmon;
+    width: 175px;
+    height: 100px;
+    margin: 0% 5%;
+}
+
+#userStats {
+    background: yellow;
+    width: 150px;
+    height: 100px;
+    margin: 0% 5%;
+}
 
 /* Crystals */
 
 #crystals {
-    
+    display: inline-flex;
 }
 
 #ruby {
-    float: left;
+    margin: 0% 2%;    
 }
 
 #diamond {
-    float: left;
+    margin: 0% 2%;
 }
 
 #sapphire {
-    float: left;
+    margin: 0% 2%;
 }
 
 #emerald {
-    float: left;
+    margin: 0% 2%;
 }
 
 /* User Score */
+
+#userScore {
+    background: springgreen;
+    width: 175px;
+    height: 100px;
+    margin: 0% 5%;
+}
