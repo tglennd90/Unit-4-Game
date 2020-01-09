@@ -21,6 +21,14 @@
 // Functions //
 // ==========================================================//
 
+    // Initial Page Load //
+
+        function pageLoad() {
+            document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
+            document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+        }
+
     // Generate Computer Number //
 
         function compNum(min, max) {
@@ -38,6 +46,16 @@
 
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }      
+
+    
+
+        
     
 // Main Process //
 // ==========================================================//
+
+    // Initial Page Load //
+        
+        pageLoad();
+
+    
