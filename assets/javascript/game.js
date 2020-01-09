@@ -27,6 +27,11 @@
             document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
             document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+
+            $("ruby").val(crystalValue)
+            $("diamond").val(crystalValue)
+            $("sapphire").val(crystalValue)
+            $("emerald").val(crystalValue)
         }
 
     // Generate Computer Number //
@@ -47,8 +52,9 @@
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }      
 
-    
+    // When clicked, add Crystal Value to User Score //
 
+       
         
     
 // Main Process //
