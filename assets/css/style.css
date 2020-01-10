@@ -6,7 +6,7 @@ body {
 }
 
 #content {
-    background: rgb(175, 174, 174);
+    background-image: url(assets/images/cave.jpg);
     width: 90%;
     margin: 5%;
 }

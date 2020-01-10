@@ -1,20 +1,24 @@
 // Global Variables //
-// ==========================================================//
+// ========================================================== //
 
     // User Stats //
-        
+    // ======================== //  
+
         var wins = 0;
         var losses = 0;
 
     // User Score //
+    // ======================== // 
 
         var userScore = 0;
 
     // Computer Number (Number user is to guess) //
+    // ======================== // 
 
         var computerNumber = compNum();
 
     // Crystal Value //
+    // ======================== // 
 
         var rubyValue = crysVal();
         var diamondValue = crysVal();
@@ -22,9 +26,10 @@
         var emeraldValue = crysVal();
         
 // Functions //
-// ==========================================================//
+// ========================================================== //
 
     // Initial Page Load //
+    // ======================== // 
 
         function pageLoad() {
             $("#ruby").val(rubyValue)
@@ -34,6 +39,7 @@
         }
 
     // Generate Computer Number //
+    // ======================== // 
 
         function compNum(min, max) {
             var min = 19;
@@ -43,6 +49,7 @@
         }
 
     // Generate Crystal Value //
+    // ======================== // 
 
         function crysVal(min, max) {
             var min = 1;
@@ -52,6 +59,7 @@
         }      
 
     // When clicked, add Crystal Value to User Score //
+    // ======================== // 
         
         $("#ruby").on("click", function rubyClick() {
             userScore = userScore + rubyValue;
@@ -127,6 +135,7 @@
         });
     
     // Reset //
+    // ======================== // 
 
         function reset() {
             computerNumber = compNum();
@@ -137,9 +146,10 @@
         }
 
 // Main Process //
-// ==========================================================//
+// ========================================================== //
 
     // Initial Page Load //
+    // ======================== // 
         
         document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
         document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
