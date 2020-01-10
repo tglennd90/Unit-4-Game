@@ -16,7 +16,10 @@
 
     // Crystal Value //
 
-        var crystalValue = crysVal();
+        var rubyValue = crysVal();
+        var diamondValue = crysVal();
+        var sapphireValue = crysVal();
+        var emeraldValue = crysVal();
         
 // Functions //
 // ==========================================================//
@@ -28,10 +31,10 @@
             document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
 
-            $("#ruby").val(crystalValue)
-            $("#diamond").val(crystalValue)
-            $("#sapphire").val(crystalValue)
-            $("#emerald").val(crystalValue)
+            $("#ruby").val(rubyValue)
+            $("#diamond").val(diamondValue)
+            $("#sapphire").val(sapphireValue)
+            $("#emerald").val(emeraldValue)
 
             // $("ruby").on("click", addCrysUserScore)
             
