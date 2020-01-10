@@ -28,10 +28,13 @@
             document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
 
-            $("ruby").val(crystalValue)
-            $("diamond").val(crystalValue)
-            $("sapphire").val(crystalValue)
-            $("emerald").val(crystalValue)
+            $("#ruby").val(crystalValue)
+            $("#diamond").val(crystalValue)
+            $("#sapphire").val(crystalValue)
+            $("#emerald").val(crystalValue)
+
+            // $("ruby").on("click", addCrysUserScore)
+            
         }
 
     // Generate Computer Number //
@@ -54,14 +57,32 @@
 
     // When clicked, add Crystal Value to User Score //
 
-       
+        // function addCrysUserScore() {
+        //     // document.getElementById("userScore").innerHTML = "Your number is currently at: " + (userScore + val(crystalValue));
+        //     console.log("test")
+        // }
         
+        $("#ruby").on("click", function rubyClick() {
+            console.log($("#ruby").val())
+        });
+        
+        $("#diamond").on("click", function diamondClick() {
+            console.log($("#diamond").val())
+        });
+
+        $("#sapphire").on("click", function sapphireClick() {
+            console.log($("#sapphire").val())
+        });
+
+        $("#emerald").on("click", function emeraldClick() {
+            console.log($("#emerald").val())
+        });
     
 // Main Process //
 // ==========================================================//
 
     // Initial Page Load //
         
-        pageLoad();
+        $(document).ready(pageLoad);
 
-    
+        
