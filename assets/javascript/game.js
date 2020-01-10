@@ -34,10 +34,7 @@
             $("#ruby").val(rubyValue)
             $("#diamond").val(diamondValue)
             $("#sapphire").val(sapphireValue)
-            $("#emerald").val(emeraldValue)
-
-            // $("ruby").on("click", addCrysUserScore)
-            
+            $("#emerald").val(emeraldValue)    
         }
 
     // Generate Computer Number //
@@ -59,26 +56,29 @@
         }      
 
     // When clicked, add Crystal Value to User Score //
-
-        // function addCrysUserScore() {
-        //     // document.getElementById("userScore").innerHTML = "Your number is currently at: " + (userScore + val(crystalValue));
-        //     console.log("test")
-        // }
         
         $("#ruby").on("click", function rubyClick() {
-            console.log($("#ruby").val())
+            userScore = userScore + rubyValue;
+
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
         });
         
         $("#diamond").on("click", function diamondClick() {
-            console.log($("#diamond").val())
+            userScore = userScore + diamondValue;
+
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
         });
 
         $("#sapphire").on("click", function sapphireClick() {
-            console.log($("#sapphire").val())
+            userScore = userScore + sapphireValue;
+
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
         });
 
         $("#emerald").on("click", function emeraldClick() {
-            console.log($("#emerald").val())
+            userScore = userScore + emeraldValue;
+
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
         });
     
 // Main Process //
