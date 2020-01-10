@@ -42,7 +42,7 @@ body {
 #gameNumber {
     background: salmon;
     width: 175px;
-    height: 100px;
+    height: 65px;
     margin: 0% 5%;
     font-weight: 700;
     font-size: x-large;
@@ -52,7 +52,7 @@ body {
 #userStats {
     background: yellow;
     width: 150px;
-    height: 100px;
+    height: fit-content;
     margin: 0% 5%;
     font-weight: 700;
     font-size: x-large;
@@ -86,7 +86,7 @@ body {
 #userScore {
     background: springgreen;
     width: 175px;
-    height: 100px;
+    height: 75px;
     margin: 0% 5%;
     font-weight: 700;
     font-size: x-large;

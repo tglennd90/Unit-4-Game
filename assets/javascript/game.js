@@ -27,14 +27,10 @@
     // Initial Page Load //
 
         function pageLoad() {
-            document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
-            document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
-            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
-
             $("#ruby").val(rubyValue)
             $("#diamond").val(diamondValue)
             $("#sapphire").val(sapphireValue)
-            $("#emerald").val(emeraldValue)    
+            $("#emerald").val(emeraldValue)  
         }
 
     // Generate Computer Number //
@@ -61,31 +57,99 @@
             userScore = userScore + rubyValue;
 
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+            
+            if (userScore === computerNumber) {
+                wins++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
+
+            if (userScore > computerNumber) {
+                losses++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
+            
         });
         
         $("#diamond").on("click", function diamondClick() {
             userScore = userScore + diamondValue;
 
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+
+            if (userScore === computerNumber) {
+                wins++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
+
+            if (userScore > computerNumber) {
+                losses++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
         });
 
         $("#sapphire").on("click", function sapphireClick() {
             userScore = userScore + sapphireValue;
 
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+
+            if (userScore === computerNumber) {
+                wins++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
+
+            if (userScore > computerNumber) {
+                losses++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
         });
 
         $("#emerald").on("click", function emeraldClick() {
             userScore = userScore + emeraldValue;
 
             document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+
+            if (userScore === computerNumber) {
+                wins++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
+
+            if (userScore > computerNumber) {
+                losses++
+                document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+                reset();
+            }
         });
     
+    // Reset //
+
+        function reset() {
+            computerNumber = compNum();
+            userScore = 0;
+
+            document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
+            document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;            
+        }
+
 // Main Process //
 // ==========================================================//
 
     // Initial Page Load //
         
+        document.getElementById("gameNumber").innerHTML = "Number to match: " + "    " + computerNumber;
+        document.getElementById("userStats").innerHTML = "Wins: " + wins + "    " + "Losses: " + losses;
+        document.getElementById("userScore").innerHTML = "Your number is currently at: " + "    " + userScore;
+        
         $(document).ready(pageLoad);
 
+    
+
         
+        
+       
+       
